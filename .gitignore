@@ -1,0 +1,15 @@
+*.pyc
+redis-astra.egg-info
+build/
+dist/
+dump.rdb
+.vscode/
+.eggs/
+.cache/
+*.egg-info/
+example.py
+test.sh
+.pytest_cache/
+.noseids
+.coverage
+_build/
