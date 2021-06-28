@@ -9,6 +9,13 @@ class ModelField(object):
     def __init__(self, **kwargs):
         """
         传入**kwargs 的demo
+        eg： {
+            "instance":True,
+            "name":"username",
+            "model":<Model UserObject(pk=1)>,
+            "db":Redis<ConnectionPool<host=127.0.0.1, port=6379,db=0>>>,
+            **target_field.options
+        }
         """
         if 'instance' in kwargs:
             self.name = kwargs['name']

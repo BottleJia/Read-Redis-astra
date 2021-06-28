@@ -5,11 +5,9 @@ from astra import models
 import datetime as dt
 from six import PY2
 
-
 if PY2:
     # Autoload only for Python 3 (see TestAutoImport for more info)
     from .other_models import SiteColorModel
-
 
 db = redis.StrictRedis(host='127.0.0.1', decode_responses=True)
 
@@ -82,3 +80,9 @@ class ParentExample(models.Model):
 class ChildExample(ParentExample):
     field1 = models.CharHash()
     field2 = models.CharHash()
+
+
+if __name__ == '__main__':
+    pass
+
+
